@@ -104,7 +104,7 @@ class FeedViewController: UIViewController, UICollectionViewDataSource, UICollec
         cell.imageView.image = UIImage(data: thisItem.image)
         cell.captionLabel.text = thisItem.caption
         
-        return UICollectionViewCell()
+        return cell
     }
 
 }
