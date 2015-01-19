@@ -60,7 +60,7 @@ class FilterViewController: UIViewController, UICollectionViewDataSource, UIColl
         let filterQueue:dispatch_queue_t = dispatch_queue_create("filter queue", nil)
         
         dispatch_async(filterQueue, { () -> Void in
-            let filterImage = self.filteredImageFromImage(self.thisFeedItem.image, filter: self.filters[indexPath.row])
+            let filterImage = self.filteredImageFromImage(self.thisFeedItem.thumbNail, filter: self.filters[indexPath.row])
             
             dispatch_async(dispatch_get_main_queue(), { () -> Void in
                 cell.imageView.image = filterImage
@@ -115,9 +115,9 @@ class FilterViewController: UIViewController, UICollectionViewDataSource, UIColl
         let extent = filteredImage.extent()
         let cgImage:CGImageRef = context.createCGImage(filteredImage, fromRect: extent)
         
-        let finalImage = UIImage(CGImage: cgImage)!
+        let finalImage = UIImage(CGImage: cgImage)
         
-        return finalImage
+        return finalImage!
     }
     
 }
