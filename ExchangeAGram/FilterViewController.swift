@@ -77,9 +77,7 @@ class FilterViewController: UIViewController, UICollectionViewDataSource, UIColl
     }
     
     // UICollectionViewDelegate
-    
-    func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath) {
-        println(thisFeedItem)
+    func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         let filterImage = self.filteredImageFromImage(self.thisFeedItem.image, filter: self.filters[indexPath.row])
         let imageData = UIImageJPEGRepresentation(filterImage, 1.0)
         self.thisFeedItem.image = imageData
@@ -93,7 +91,6 @@ class FilterViewController: UIViewController, UICollectionViewDataSource, UIColl
     //Helper Function
     
     func photoFilters() -> [CIFilter] {
-        
         let blur = CIFilter(name: "CIGaussianBlur")
         let instant = CIFilter(name: "CIPhotoEffectInstant")
         let noir = CIFilter(name: "CIPhotoEffectNoir")
@@ -124,7 +121,6 @@ class FilterViewController: UIViewController, UICollectionViewDataSource, UIColl
     }
     
     func filteredImageFromImage (imageData: NSData, filter: CIFilter) -> UIImage {
-        
         let unfilteredImage = CIImage(data: imageData)
         filter.setValue(unfilteredImage, forKey: kCIInputImageKey)
         let filteredImage:CIImage = filter.outputImage
