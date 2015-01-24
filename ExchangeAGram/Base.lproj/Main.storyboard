@@ -96,6 +96,16 @@
                                 <rect key="frame" x="50" y="400" width="200" height="50"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Xh-bX-NCe">
+                                <rect key="frame" x="10" y="220" width="140" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.96284783689999998" blue="0.0077251071820000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Map View">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="mapViewButtonTaped:" destination="LNI-h0-OzO" eventType="touchUpInside" id="gyv-80-80J"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -103,11 +113,38 @@
                         <outlet property="fbLoginView" destination="FFZ-IQ-h9l" id="vNh-5Z-Mfd"/>
                         <outlet property="nameLabel" destination="5RR-1c-ncD" id="T5z-0B-zVT"/>
                         <outlet property="profileImageView" destination="GHq-4k-XgF" id="h2G-Rh-MdW"/>
+                        <segue destination="MJd-ZQ-dTD" kind="show" identifier="mapSegue" id="Ewo-XP-CxB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJ9-Wf-YCO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1515" y="1048"/>
+        </scene>
+        <!--Map View Controller-->
+        <scene sceneID="5CJ-2Z-lbD">
+            <objects>
+                <viewController id="MJd-ZQ-dTD" customClass="MapViewController" customModule="ExchangeAGram" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yfH-Sd-kbl"/>
+                        <viewControllerLayoutGuide type="bottom" id="RaG-DK-xuY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3aJ-vO-eRu" customClass="Map">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="tZG-4n-b4C">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="tZG-4n-b4C" id="jgH-26-7ea"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xjo-Ah-b1c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2289" y="1048"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XNT-Pz-7SM">

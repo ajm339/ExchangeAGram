@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B6BF6171A731803007475DE /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6BF6161A731803007475DE /* MapViewController.swift */; };
+		7B6BF6191A731B72007475DE /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B6BF6181A731B72007475DE /* MapKit.framework */; };
+		7B6BF61B1A7326AE007475DE /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6BF61A1A7326AE007475DE /* FeedItem.swift */; };
 		7B80360A1A672DE000402C79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8036091A672DE000402C79 /* AppDelegate.swift */; };
 		7B80360D1A672DE000402C79 /* ExchangeAGram.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7B80360B1A672DE000402C79 /* ExchangeAGram.xcdatamodeld */; };
 		7B8036121A672DE000402C79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B8036101A672DE000402C79 /* Main.storyboard */; };
@@ -16,7 +19,6 @@
 		7B80362D1A6733C100402C79 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B80362C1A6733C100402C79 /* FeedViewController.swift */; };
 		7B80362F1A674F0F00402C79 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B80362E1A674F0F00402C79 /* FeedCell.swift */; };
 		7B8036311A6753CA00402C79 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B8036301A6753CA00402C79 /* MobileCoreServices.framework */; };
-		7B87C4FA1A6DBAFE005642BD /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B87C4F91A6DBAFE005642BD /* FeedItem.swift */; };
 		7BC3152D1A6EE6F300A3A1AA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC3152C1A6EE6F300A3A1AA /* ProfileViewController.swift */; };
 		7BC3152F1A6F016A00A3A1AA /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BC3152E1A6F016A00A3A1AA /* FacebookSDK.framework */; };
 		7BC973961A6CB78D005DA5B6 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BC973951A6CB78D005DA5B6 /* FilterViewController.swift */; };
@@ -35,6 +37,9 @@
 
 /* Begin PBXFileReference section */
 		7B6BF6131A706BCB007475DE /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		7B6BF6161A731803007475DE /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		7B6BF6181A731B72007475DE /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7B6BF61A1A7326AE007475DE /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		7B8036041A672DE000402C79 /* ExchangeAGram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExchangeAGram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B8036081A672DE000402C79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B8036091A672DE000402C79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -48,7 +53,6 @@
 		7B80362C1A6733C100402C79 /* FeedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		7B80362E1A674F0F00402C79 /* FeedCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FeedCell.swift; path = ../FeedCell.swift; sourceTree = "<group>"; };
 		7B8036301A6753CA00402C79 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		7B87C4F91A6DBAFE005642BD /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
 		7BC3152C1A6EE6F300A3A1AA /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		7BC3152E1A6F016A00A3A1AA /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		7BC973951A6CB78D005DA5B6 /* FilterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B6BF6191A731B72007475DE /* MapKit.framework in Frameworks */,
 				7B8036311A6753CA00402C79 /* MobileCoreServices.framework in Frameworks */,
 				7BC3152F1A6F016A00A3A1AA /* FacebookSDK.framework in Frameworks */,
 			);
@@ -101,6 +106,7 @@
 				7BC973951A6CB78D005DA5B6 /* FilterViewController.swift */,
 				7BC973971A6CC154005DA5B6 /* FilterCell.swift */,
 				7B80362E1A674F0F00402C79 /* FeedCell.swift */,
+				7B6BF6161A731803007475DE /* MapViewController.swift */,
 				7B8036101A672DE000402C79 /* Main.storyboard */,
 				7BC3152C1A6EE6F300A3A1AA /* ProfileViewController.swift */,
 				7B6BF6131A706BCB007475DE /* Bridging-Header.h */,
@@ -115,6 +121,7 @@
 		7B8036071A672DE000402C79 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				7B6BF6181A731B72007475DE /* MapKit.framework */,
 				7BC3152E1A6F016A00A3A1AA /* FacebookSDK.framework */,
 				7B8036301A6753CA00402C79 /* MobileCoreServices.framework */,
 				7B8036081A672DE000402C79 /* Info.plist */,
@@ -142,8 +149,8 @@
 		7B87C4FB1A6DBB26005642BD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				7B6BF61A1A7326AE007475DE /* FeedItem.swift */,
 				7B80360B1A672DE000402C79 /* ExchangeAGram.xcdatamodeld */,
-				7B87C4F91A6DBAFE005642BD /* FeedItem.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -252,8 +259,9 @@
 				7BC973961A6CB78D005DA5B6 /* FilterViewController.swift in Sources */,
 				7B80360A1A672DE000402C79 /* AppDelegate.swift in Sources */,
 				7B80362F1A674F0F00402C79 /* FeedCell.swift in Sources */,
+				7B6BF6171A731803007475DE /* MapViewController.swift in Sources */,
+				7B6BF61B1A7326AE007475DE /* FeedItem.swift in Sources */,
 				7B80362D1A6733C100402C79 /* FeedViewController.swift in Sources */,
-				7B87C4FA1A6DBAFE005642BD /* FeedItem.swift in Sources */,
 				7BC3152D1A6EE6F300A3A1AA /* ProfileViewController.swift in Sources */,
 				7B80360D1A672DE000402C79 /* ExchangeAGram.xcdatamodeld in Sources */,
 			);
