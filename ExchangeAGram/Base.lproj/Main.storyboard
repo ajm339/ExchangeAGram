@@ -69,6 +69,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="6Th-k9-dyI">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
             </objects>
             <point key="canvasLocation" x="803" y="1048"/>
         </scene>
@@ -164,6 +169,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xZS-Q2-3ao" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="116" y="1048"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="y4Z-SW-51Y">
+            <objects>
+                <viewController id="JaY-qV-INm" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ggM-xe-x59"/>
+                        <viewControllerLayoutGuide type="bottom" id="6kW-rY-SmE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jcG-JX-RjO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2a1-St-u26" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <resources>
